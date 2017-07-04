@@ -1,7 +1,7 @@
 
 (function() {
     angular
-        .module('app')
+        .module('pluri')
         .controller('LoginController', LoginController);
 
     function LoginController($scope) {

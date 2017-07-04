@@ -5,5 +5,5 @@
         API: 'api/'
     };
 
-    angular.module('app', ['ui.router', 'ngMaterial', 'ngAnimate']).constant('EndpointApi', EndpointApi);
+    angular.module('pluri', ['ui.router', 'ngMaterial', 'ngAnimate']).constant('EndpointApi', EndpointApi);
 })();

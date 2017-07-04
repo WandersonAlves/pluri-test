@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR" ng-app="app">
+<html lang="pt-BR" ng-app="pluri">
 
 <head>
     <meta charset="utf-8">
@@ -24,10 +24,10 @@
     <!-- <link rel="manifest" href="manifest.json" /> -->
 </head>
 
-<body layout="column" ng-cloak>
+<body layout="column" ng-cloak ng-controller="NavigationController as navController">
     <md-toolbar>
       <div class="md-toolbar-tools">
-          <h3 class="md-display-2">Login</h3>
+          <h3 class="md-display-2">Olá, {{navController.currentUser}}</h3>
       </div>
     </md-toolbar>
     <md-content flex layout-padding>
@@ -50,6 +50,7 @@
     <script src="config/app.module.js"></script>
     <script src="config/app.config.js"></script>
     <script src="config/app.routes.js"></script>
+    <script src="controllers/navigation.controller.js"></script>
     <script src="controllers/login.controller.js"></script>
     <!-- endbuild -->
     <!-- PWA config -->

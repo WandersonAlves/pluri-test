@@ -1,6 +1,6 @@
 (function() {
     angular
-        .module('app')
+        .module('pluri')
         .config(config);
 
     function config($stateProvider, $urlRouterProvider) {
