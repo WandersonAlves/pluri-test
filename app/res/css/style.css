@@ -14,3 +14,7 @@ md-dialog.md-default-theme, md-dialog {
   box-shadow: none;
   overflow: hidden;
 }
+
+.md-button {
+  text-transform: none;
+}

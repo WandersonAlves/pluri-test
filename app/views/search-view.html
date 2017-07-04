@@ -1,1 +1,11 @@
-<h1>Oi</h1>
+<div layout-fill>
+  <form name="searchForm" layout="row" flex>
+    <md-input-container flex class="md-icon-float md-block">
+        <md-icon md-svg-src="../res/img/ic_search_black_24px.svg"></md-icon>
+        <input ng-model="searchController.searchQuery" type="text">
+    </md-input-container>
+    <div>
+      <md-button>Limpar Filtro</md-button>
+    </div>
+  </form>
+</div>

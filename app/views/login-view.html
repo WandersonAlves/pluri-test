@@ -1,22 +1,21 @@
-
-	<div layout="row" layout-align="center center" layout-fill>
-		<md-content class="md-padding" layout-xs="column" layout-align="center center" layout="row">
-			<div flex flex-gt-xs="50" flex-gt-sm="30" layout="column">
-				<md-card>
-					<img src="../res/img/banner.jpg" class="md-card-image" alt="Banner">
-					<md-card-content layout="column">
-						<md-input-container>
-							<label>Email *</label>
-							<input ng-model="loginController.email" type="email">
-						</md-input-container>
-						<md-input-container>
-							<label>Password *</label>
-							<input ng-model="loginController.password" type="password">
-						</md-input-container>
-							<md-button ng-click="loginController.loginUser()" class="md-raised md-primary">ENTRAR</md-button>
-							<a class="login-link" href="#">Esqueceu a senha?</a>
-					</md-card-content>
-				</md-card>
-			</div>
-		</md-content>
-	</div>
+<div layout="row" layout-align="center center" layout-fill>
+	<md-content class="md-padding" layout-xs="column" layout-align="center center" layout="row">
+		<div flex flex-gt-xs="50" flex-gt-sm="30" layout="column">
+			<md-card>
+				<img src="../res/img/banner.jpg" class="md-card-image" alt="Banner">
+				<md-card-content layout="column">
+					<md-input-container>
+						<label>E-mail *</label>
+						<input ng-model="loginController.email" type="email">
+					</md-input-container>
+					<md-input-container>
+						<label>Senha *</label>
+						<input ng-model="loginController.password" type="password">
+					</md-input-container>
+					<md-button ng-click="loginController.loginUser()" class="md-raised md-primary">ENTRAR</md-button>
+					<a class="login-link" href="#">Esqueceu a senha?</a>
+				</md-card-content>
+			</md-card>
+		</div>
+	</md-content>
+</div>
