@@ -18,3 +18,7 @@ md-dialog.md-default-theme, md-dialog {
 .md-button {
   text-transform: none;
 }
+
+.content-padding {
+  padding: 0px 10px 0px 10px;
+}
