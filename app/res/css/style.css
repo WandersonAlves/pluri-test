@@ -8,3 +8,9 @@
   color: #259b24;
   text-decoration: none;
 }
+
+md-dialog.md-default-theme, md-dialog {
+  background-color: transparent;
+  box-shadow: none;
+  overflow: hidden;
+}
