@@ -1,0 +1,26 @@
+{
+  "name": "pluri-test",
+  "description": "Aplicativo Pluri",
+  "main": "server.js",
+  "authors": [
+    "Wanderson Alves"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "angular-ui-router": "^0.3.1",
+    "angular": "^1.6.5",
+    "angular-material": "^1.1.4",
+    "angular-animate": "^1.6.5",
+    "angular-aria": "^1.6.5"
+  }
+}
