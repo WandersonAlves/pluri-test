@@ -4,7 +4,7 @@
         .module('pluri')
         .controller('LoginController', LoginController);
 
-    function LoginController(LoginService, UserObservable, LoadingUtil) {
+    function LoginController(LoginService, UserObservable, LoadingUtil, $state) {
         var vm = this;
         // NOTE Public functions
 
@@ -21,7 +21,8 @@
           LoadingUtil.stopLoading();
           if (angular.isDefined(response.informacoesUsuario)) {
             UserObservable.setUser(response.informacoesUsuario.nome);
-            localStorage.set("USER_TOKEN", response.informacoesUsuario.token);
+            localStorage.setItem("USER_TOKEN", response.informacoesUsuario.token);
+            $state.go('search');
           }
           else {
             // errr
