@@ -22,3 +22,11 @@ md-dialog.md-default-theme, md-dialog {
 .content-padding {
   padding: 0px 10px 0px 10px;
 }
+
+.no-margin {
+  margin: 0;
+}
+
+.no-line-height {
+  line-height: 0px
+}
