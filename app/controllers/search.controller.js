@@ -3,7 +3,7 @@
         .module('pluri')
         .controller('SearchController', SearchController);
 
-    function SearchController(AulasService, AulasFactory) {
+    function SearchController(AulasService, AulasFactory, UserObservable, $state) {
         var vm = this;
 
         vm.setClass = function (area) {
@@ -31,6 +31,9 @@
         }
 
         var init = function () {
+          if (angular.isUndefined(UserObservable.getUser())) {
+            $state.go('login');
+          }
           if (angular.isDefined(localStorage.getItem("USER_TOKEN"))){
             AulasService.getAulas().then(_aulasServiceSuccess, _aulasServiceError);
           }
