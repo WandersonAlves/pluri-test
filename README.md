@@ -1,22 +1,22 @@
-# Angular Supppaaaarrrrrrrrrr Start
+# Pluri Interview Test
 
-This repo aims to be a central place for my projects in AngularJS 1.5.x
+Repositorio do teste da Pluri Educacional
 
-## Getting Started
+Link: http://pluri-test.surge.sh/
 
-Just run `npm install` or `yarn install`.
+## Inicio
 
-The process of installation consists of:
+Rodar `npm install` ou `yarn install` que todo o setup da aplicação será feito.
 
-* Download NPM dependencies
-* Download Bower dependencies
-* Run build script from `gulp`
+## Requirimentos
 
-## Run Application
+- NodeJS v6.x.x+
+
+## Rodando a aplicação
 
 ### Dev Server
-`node index.js`
+`npm run dev`
 ### Prod Server
-`npm start` on Unix env or `hs -c -1 /public` otherwise (requires http-server package)
+`npm start` em ambiente Unix ou `hs -c -1 /public` nos outros (requer o pacote node `http-server`)
 ### Unit Testing (Karma + Jasmine)
-`npm test` or `npm run test-debug` for debug unit tests
+`npm test`
