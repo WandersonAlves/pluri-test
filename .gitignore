@@ -4,5 +4,5 @@ public
 .tmp
 .sass-cache
 bower_components
-neweb.pid
 reports
+npm-debug.log

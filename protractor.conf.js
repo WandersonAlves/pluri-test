@@ -1,6 +1,5 @@
 exports.config = {
     framework: 'jasmine',
-    baseUrl: 'http://localhost:8080/',
     //allScriptsTimeout: 15000,
     //seleniumAddress: 'http://localhost:4444/wd/hub',
     capabilities: {
@@ -14,11 +13,22 @@ exports.config = {
         specs: ['test/e2e/**/*.spec.js']
     },
     onPrepare: function () {
-        var failFast = require('jasmine-fail-fast');
-        browser.driver.manage().window().maximize();
+        var SpecReporter = require('jasmine-spec-reporter').SpecReporter;
         // add jasmine spec reporter
-        jasmine.getEnv().addReporter(failFast.init());
+        jasmine.getEnv().addReporter(new SpecReporter({
+          spec: {
+            displayStacktrace: true
+          }
+        }));
     },
+    plugins: [{
+      package: 'protractor-http-snitch',
+
+      // Optional options
+      level: {
+        failure: 'debug'
+      }
+    }],
     jasmineNodeOpts: {
         print: function () {}
     }
