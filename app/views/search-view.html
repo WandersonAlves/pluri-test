@@ -2,7 +2,7 @@
   <form name="searchForm" layout="row" flex md-whiteframe="3" class="content-padding">
     <md-input-container flex class="md-icon-float md-block">
       <md-icon md-svg-src="../res/img/ic_search_black_24px.svg"></md-icon>
-      <input ng-model="searchController.searchQuery" type="text">
+      <input ng-model="searchController.searchQuery" type="text" aria-label="campo-pesquisa">
     </md-input-container>
     <div>
       <md-button ng-click="searchController.searchQuery = ''">Limpar Filtro</md-button>
