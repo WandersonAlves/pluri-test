@@ -40,6 +40,7 @@
     "test": "karma start --single-run --browsers PhantomJS",
     "test-chrome": "karma start --single-run --browsers Chrome",
     "test-debug": "karma start --single-run=false --browsers Chrome",
+    "test-e2e": "protractor protractor.conf.js",
     "start": "NODE_ENV=production node server.js",
     "dev": "hs app/ -c-1 -o -s --cors",
     "postinstall": "bower install && gulp build",

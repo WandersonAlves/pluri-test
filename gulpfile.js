@@ -48,6 +48,9 @@ gulp.task('copy', function() {
     }, {
         src: './app/partials/**/',
         dest: './public/partials/'
+    }, {
+        src: './app/favicon.ico',
+        dest: './public/favicon.ico'
     }];
     // NOTE Use templateCache to keepViews inline
     return copy(paths);

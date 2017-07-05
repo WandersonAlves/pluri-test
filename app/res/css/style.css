@@ -2,21 +2,11 @@
   font-family: 'Open Sans', sans-serif !important;
   font-size: 1em;
 }
-
+/* Utils */
 .login-link {
   text-align: center;
   color: #259b24;
   text-decoration: none;
-}
-
-md-dialog.md-default-theme, md-dialog {
-  background-color: transparent;
-  box-shadow: none;
-  overflow: hidden;
-}
-
-.md-button {
-  text-transform: none;
 }
 
 .content-padding {
@@ -34,7 +24,7 @@ md-dialog.md-default-theme, md-dialog {
 .text-wrap {
   word-wrap: break-word;
 }
-
+/* Card Coloring Classes */
 .green-bg {
   background-color: #9bd358;
 }
@@ -50,7 +40,7 @@ md-dialog.md-default-theme, md-dialog {
 .red-bg {
   background-color: #d63f42;
 }
-
+/* Animation Classes */
 .fade-element-in.ng-enter {
   transition: 0.2s linear all;
   opacity: 0;
@@ -70,4 +60,14 @@ md-dialog.md-default-theme, md-dialog {
 }
 .fade-element-in.ng-leave.ng-leave-active {
   opacity: 0;
+}
+/* Overlay list */
+md-dialog.md-default-theme, md-dialog {
+  background-color: transparent;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.md-button {
+  text-transform: none;
 }
