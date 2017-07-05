@@ -5,5 +5,5 @@ exports.doLoginSuccess = function() {
 
   email.sendKeys("aluno_1@plurieducacional.com.br");
   pass.sendKeys(123456);
-  loginBtn.click();
+  return loginBtn.click();
 };

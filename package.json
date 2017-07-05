@@ -32,6 +32,7 @@
     "ng-describe": "^1.8.0",
     "protractor": "^5.1.1",
     "protractor-http-mock": "^0.9.2",
+    "protractor-http-snitch": "^0.2.6",
     "protractor-jasmine2-screenshot-reporter": "^0.3.3",
     "pump": "^1.0.2",
     "run-sequence": "^1.1.5",
