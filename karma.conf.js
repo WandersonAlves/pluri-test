@@ -11,13 +11,28 @@ module.exports = function (config) {
 		frameworks: ['jasmine'],
 		// list of files / patterns to load in the browser
 		files: [
-			'app/bower_components/jquery/dist/jquery.min.js',
-			'app/bower_components/angular/angular.js',
-			'node_modules/angular-mocks/angular-mocks.js',
-			'node_modules/ng-describe/dist/ng-describe.js',
-			'app/bower_components/angular-ui-router/release/angular-ui-router.js',
+			"app/bower_components/jquery/dist/jquery.min.js",
+	    "app/bower_components/lodash/dist/lodash.min.js",
+	    "app/bower_components/angular/angular.js",
+			"node_modules/angular-mocks/angular-mocks.js",
+			"node_modules/ng-describe/dist/ng-describe.js",
+	    "app/bower_components/angular-aria/angular-aria.min.js",
+	    "app/bower_components/angular-animate/angular-animate.min.js",
+	    "app/bower_components/angular-material/angular-material.min.js",
+	    "app/bower_components/angular-ui-router/release/angular-ui-router.min.js",
+			"app/config/app.module.js",
+	    "app/config/app.config.js",
+	    "app/config/app.routes.js",
+	    "app/factories/aulas.factory.js",
+	    "app/services/utils/loading.util.js",
+	    "app/services/observables/user.observable.js",
+	    "app/services/api/login.service.js",
+	    "app/services/api/aulas.service.js",
+	    "app/controllers/navigation.controller.js",
+	    "app/controllers/login.controller.js",
+	    "app/controllers/search.controller.js",
 			// Add here the application files and the rest of dependencies
-			'test/**/*.js'
+			"test/**/*.js"
 		],
 		// list of files to exclude
 		exclude: [],
