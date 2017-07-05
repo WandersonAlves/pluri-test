@@ -45,6 +45,9 @@ gulp.task('copy', function() {
     }, {
         src: './app/views/**/',
         dest: './public/views/'
+    }, {
+        src: './app/partials/**/',
+        dest: './public/partials/'
     }];
     // NOTE Use templateCache to keepViews inline
     return copy(paths);
