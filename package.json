@@ -20,6 +20,7 @@
     "gulp-useref": "^3.1.2",
     "imagemin-jpeg-recompress": "^5.1.0",
     "jasmine-core": "^2.5.2",
+    "jasmine-fail-fast": "^2.0.0",
     "jasmine-spec-reporter": "^3.2.0",
     "karma": "^1.2.0",
     "karma-chrome-launcher": "^2.0.0",
@@ -43,7 +44,7 @@
     "test-e2e": "protractor protractor.conf.js",
     "start": "NODE_ENV=production node server.js",
     "dev": "hs app/ -c-1 -o -s --cors",
-    "postinstall": "bower install && gulp build",
+    "postinstall": "bower install && gulp build && webdriver-manager update",
     "build": "gulp build"
   },
   "author": "Wanderson Alves",

@@ -6,13 +6,13 @@
 				<md-card-content layout="column">
 					<md-input-container>
 						<label>E-mail *</label>
-						<input ng-model="loginController.email" type="email">
+						<input id="email-input" ng-model="loginController.email" type="email">
 					</md-input-container>
 					<md-input-container>
 						<label>Senha *</label>
-						<input ng-model="loginController.password" ng-keyup="$event.key === 'Enter' && loginController.loginUser()" type="password">
+						<input id="pass-input" ng-model="loginController.password" ng-keyup="$event.key === 'Enter' && loginController.loginUser()" type="password">
 					</md-input-container>
-					<md-button ng-click="loginController.loginUser()" class="md-raised md-primary">ENTRAR</md-button>
+					<md-button id="login-btn" ng-click="loginController.loginUser()" class="md-raised md-primary">ENTRAR</md-button>
 					<a class="login-link" href="#">Esqueceu a senha?</a>
 				</md-card-content>
 			</md-card>
