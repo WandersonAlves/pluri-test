@@ -3,7 +3,7 @@
       .module('pluri')
       .service('AulasService', AulasService);
 
-  function AulasService($http, ) {
+  function AulasService($http) {
 
       var _getAulas = function () {
         return $http.get('http://homologacao-api.semchamada.com.br/aulas', {
