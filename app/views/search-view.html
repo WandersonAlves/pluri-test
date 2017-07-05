@@ -1,5 +1,5 @@
 <div>
-  <form name="searchForm" layout="row" flex md-whiteframe="3" class="content-padding ">
+  <form name="searchForm" layout="row" flex md-whiteframe="3" class="content-padding">
     <md-input-container flex class="md-icon-float md-block">
       <md-icon md-svg-src="../res/img/ic_search_black_24px.svg"></md-icon>
       <input ng-model="searchController.searchQuery" type="text">
@@ -8,20 +8,20 @@
       <md-button>Limpar Filtro</md-button>
     </div>
   </form> <br />
-  <div layout-fill layout="column">
-    <div layout="row" layout-wrap>
-      <md-card ng-repeat="aula in searchController.aulas | filter:searchController.searchQuery">
+  <div layout="row" layout-wrap layout-xs="column">
+    <div flex="33" flex-xs="100" flex-sm="50" flex-md="50" ng-repeat="aula in searchController.aulas | filter:searchController.searchQuery">
+      <md-card ng-class="searchController.setClass(aula.areaconhecimento_descricao)" >
         <md-card-header>
           <md-card-header-text> <span class="md-title">{{aula.aula_descricao}}</span> </md-card-header-text>
         </md-card-header>
         <md-card-content layout="column">
-          <p class="no-line-height">{{aula.areaconhecimento_descricao}}</p>
+          <p class="no-line-height">{{aula.modulo_descricao}}</p>
           <p class="no-line-height">{{aula.disciplina_descricao}}</p>
         </md-card-content>
         <md-card-footer>
           <md-button class="md-raised md-primary no-margin" aria-label="assistir">ASSISTIR</md-button>
         </md-card-footer>
       </md-card>
-    </div>
+      </div>
   </div>
 </div>

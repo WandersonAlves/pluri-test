@@ -30,3 +30,19 @@ md-dialog.md-default-theme, md-dialog {
 .no-line-height {
   line-height: 0px
 }
+
+.green-bg {
+  background-color: #9bd358;
+}
+
+.darkturquoise-bg {
+  background-color: #06d2b4;
+}
+
+.pink-bg {
+  background-color: #ffcbcc;
+}
+
+.red-bg {
+  background-color: #d63f42;
+}
