@@ -8,6 +8,8 @@ Link: http://pluri-test.surge.sh/
 
 Rodar `npm install` ou `yarn install` que todo o setup da aplicação será feito.
 
+Usar "aluno_1@plurieducacional.com.br" como e-mail e "123456" como senha para fazer o login com sucesso
+
 ## Requirimentos
 
 - NodeJS v6.x.x+
