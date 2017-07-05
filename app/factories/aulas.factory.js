@@ -6,7 +6,7 @@
     function AulasFactory($filter) {
 
         var _filterFromGetAulas = function(result) {
-            return $filter('limitTo')(result, 50);
+            return $filter('limitTo')(window._.shuffle(result), 50);
         }
 
         return {

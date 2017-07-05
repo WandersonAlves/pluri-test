@@ -5,7 +5,7 @@
       <input ng-model="searchController.searchQuery" type="text">
     </md-input-container>
     <div>
-      <md-button>Limpar Filtro</md-button>
+      <md-button ng-click="searchController.searchQuery = ''">Limpar Filtro</md-button>
     </div>
   </form> <br />
   <div layout="row" layout-wrap layout-xs="column">
@@ -14,9 +14,9 @@
         <md-card-header>
           <md-card-header-text> <span class="md-title">{{aula.aula_descricao}}</span> </md-card-header-text>
         </md-card-header>
-        <md-card-content layout="column">
-          <p class="no-line-height">{{aula.modulo_descricao}}</p>
-          <p class="no-line-height">{{aula.disciplina_descricao}}</p>
+        <md-card-content>
+          <p class="no-line-height"><span class="md-caption">{{aula.modulo_descricao}}</span></p>
+          <p><span class="md-caption">{{aula.disciplina_descricao}}</span></p>
         </md-card-content>
         <md-card-footer>
           <md-button class="md-raised md-primary no-margin" aria-label="assistir">ASSISTIR</md-button>

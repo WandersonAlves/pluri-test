@@ -31,6 +31,10 @@ md-dialog.md-default-theme, md-dialog {
   line-height: 0px
 }
 
+.text-wrap {
+  word-wrap: break-word;
+}
+
 .green-bg {
   background-color: #9bd358;
 }
