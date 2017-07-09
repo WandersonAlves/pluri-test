@@ -101,10 +101,10 @@ gulp.task('server', function() {
     'use strict';
     browserSync.init({
         server: {
-            baseDir: "app"
+            baseDir: "./app"
         },
         port: 8080
     });
 
-		gulp.watch("app/controllers/**/.*js").on("change", reload);
+    gulp.watch("(!bower_components)**/.*js").on("change", reload);
 });
